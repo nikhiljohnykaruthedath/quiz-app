@@ -1,0 +1,70 @@
+.resultAnswerItem {
+    background: #E5E8EF;
+    color: #2F3B73;
+    margin: 5px 20px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.correctAnswer, .correctAnswerRow {
+    background: #94D6A3;
+    color: #337447;
+}
+
+.wrongAnswer, .wrongAnswerRow {
+    background: #d69494;
+    color: #743333;
+}
+
+.accordion {
+    margin: 10px 0;
+}
+
+.box {
+    text-align: center;
+    font-family: 'Bitter';
+    font-weight: 700;
+    padding: 20px;
+}
+
+.boxResultsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.boxResults {
+    padding: 10px;
+}
+
+.boxValue {
+    color: #2F3B73;
+    font-size: 3em;
+}
+
+.sectionTitle {
+    color: #2F3B73;
+    font-size: 2em;
+    font-family: 'Bitter';
+    border-bottom: 2px solid #2F3B73;
+    margin: 0 0 20px 0;
+}
+
+.resultsContinue {
+    background: #476FF5;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.resultsContinue:hover {
+    background: #3351b3;
+    color: #FFFFFF;
+}

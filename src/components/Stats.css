@@ -1,0 +1,12 @@
+.noDataMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.statsContainer {
+    padding: 50px;
+}
