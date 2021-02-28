@@ -24,10 +24,15 @@ v14.13.1
 
 ## 3. Download the source code and open it in Visual Studio Code
 ## 4. In Visual Studio Code, open the Terminal (Terminal -> New Terminal)
-## 5. Run the following commands
+## 5. Make sure you are in the current folder (quiz-app-master) and then run the following commands
 
 `$ npm install`
 
 `$ npm start`
 
+Note: If you are not in the current folder, then you can use cd (change directory command to move to the quiz-app-master folder
+More on the cd command can be found here: https://linuxize.com/post/linux-cd-command/
+
 ## 6. After running the final command given above, you will be able to run the application on localhost:3000 or any other port mentioned in the terminal
+
+Note: I have tested the application in Chrome (Version 88.0.4324.182) and Firefox (82.0.2 (64-bit))
