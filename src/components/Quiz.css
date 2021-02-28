@@ -70,24 +70,7 @@
     padding: 10px;
 }
 
-.submit {
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    padding: 15px 30px;
-    font-weight: 700;
-    border-radius: 5px;
-    background: #F54747 !important;
-}
 
-.submit:hover {
-    background: #be3838 !important;
-    color: #FFFFFF;
-}
-
-.rightButton {
-    float: right;
-}
 
 .modal-content, .modal-footer {
     border: none;

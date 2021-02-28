@@ -71,7 +71,7 @@ const Results = (props) => {
                 <div className="sectionTitle">Question and Answers</div>
                 {
                     props.quizQuestionSet && props.quizQuestionSet.map((question, index) => (
-                        <div className="row">
+                        <div key={question.id} className="row">
                             <div className="accordion accordion-flush" id="accordionFlushExample">
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="flush-headingOne">

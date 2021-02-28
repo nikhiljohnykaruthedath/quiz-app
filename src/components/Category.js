@@ -84,7 +84,7 @@ const Category = (props) => {
                 id: question.id,
                 correct_answer_id: question.correct_answer_id,
                 question_text: question.question_text,
-                category: question.category,
+                category: "All",
                 answers: question.answers,
                 selected_answer_id: -1 // Adding selected answer id
             }))

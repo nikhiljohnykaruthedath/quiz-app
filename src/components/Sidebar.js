@@ -2,6 +2,7 @@ import "./Sidebar.css";
 import React from "react";
 import CloseIcon from '@material-ui/icons/Close';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import { addQuizQuestionSet, addQuizResults, addQuizStats } from '../actions/apiData'
 
 const Sidebar = ({ width, height, children, categoryName }, props) => {
@@ -29,7 +30,10 @@ const Sidebar = ({ width, height, children, categoryName }, props) => {
                 </div>
                 <div className="col-sm-4 pageTitle">{categoryName}</div>
                 <div className="col-sm-4">
-                    <button className="submit rightButton" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                    <button className="submit rightButton" data-bs-toggle="modal" data-bs-target="#submitModal">Submit</button>
+                    <Link to="/">
+                        <button className="btn cancelButton rightButton">Go back to Categories</button>
+                    </Link>
                 </div>
             </div>
             <div

@@ -12,7 +12,20 @@ const Stats = (props) => {
     let argumentStructureQuestionsData = [];
     let allQuestionData = [];
 
+    const getStatsData = () => {
+        // Read from local storage if data is present
+        if (props.quizStats.length === 0) {
+            let array = JSON.parse(localStorage.getItem('quizStats'));
+            if (array && array.length > 0) {
+                array.map((arr) => {
+                    props.addQuizStats(arr);
+                })
+            }
+        }
+    }
+
     const getData = () => {
+
         props.quizStats.map((stat) => {
             if (stat.categoryType === 'Main Point Questions') {
                 mainPointQuestionData.push([stat.sessions.timestamp, stat.sessions.score]);
@@ -28,6 +41,7 @@ const Stats = (props) => {
 
     return (
         <div>
+            { getStatsData()}
             { getData()}
             <div className="row text-center navbar">
                 <div className="col-sm"></div>

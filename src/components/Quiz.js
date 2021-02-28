@@ -4,6 +4,7 @@ import './Quiz.css';
 import Results from './Results';
 import Sidebar from './Sidebar';
 import { connect } from 'react-redux'
+
 import { addQuizQuestionSet, addQuizResults, addQuizStats } from '../actions/apiData'
 
 const Quiz = (props) => {
@@ -75,7 +76,7 @@ const Quiz = (props) => {
                                     <div className="sidebar_text">Select from the list below to jump to that particular question...</div>
                                     {
                                         props.quizQuestionSet.map((question, index) => (
-                                            <div className="sidebar_link" onClick={() => setCurrentIndex(index)}>
+                                            <div key={index} className="sidebar_link" onClick={() => setCurrentIndex(index)}>
                                                 <div className="questionLink" >
                                                     {`Question ${index + 1}`}
                                                 </div>
@@ -116,11 +117,11 @@ const Quiz = (props) => {
                                 </div>
 
                                 {/* Warning Modal on submit */}
-                                <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal fade" id="submitModal" tabIndex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
                                     <div className="modal-dialog">
                                         <div className="modal-content">
                                             <div className="modal-header">
-                                                <h5 className="modal-title" id="exampleModalLabel">Submit Quiz Session?</h5>
+                                                <h5 className="modal-title" id="submitModalLabel">Submit Quiz Session?</h5>
                                             </div>
                                             <div className="modal-body">
                                                 Are you sure you want to submit this quiz session. You won't be able to change your answers later.
@@ -137,7 +138,7 @@ const Quiz = (props) => {
                 }
             </div>
         </div>
-    ) : <h1>We are loading!!!</h1>;
+    ) : <h1 className="text-center">Please redirect to Categories by going to path: / </h1>;
 
 };
 
